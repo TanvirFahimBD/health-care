@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import serviecsInfo from "../../data/services.json";
-import SingleServiceInfo from "../SingleServiceInfo/SingleServiceInfo";
+import SingleServiceDetails from "../SingleServiceDetails/SingleServiceDetails";
 
 const ServiceDetails = () => {
   const { serviceId } = useParams();
@@ -15,12 +15,12 @@ const ServiceDetails = () => {
   return (
     <div className="service-all">
       {services.map((sc) => (
-        <SingleServiceInfo
+        <SingleServiceDetails
           id={sc._id}
           name={sc.name}
           picture={sc.picture}
           desc={sc.desc}
-        ></SingleServiceInfo>
+        ></SingleServiceDetails>
       ))}
     </div>
   );
