@@ -1,0 +1,12 @@
+.single-event img {
+  height: 200px;
+  width: 100%;
+}
+
+.single-event {
+  width: 400px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px lightgray;
+  border-radius: 10px;
+  padding: 10px;
+}

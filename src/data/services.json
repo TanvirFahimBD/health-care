@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "613769040e8f3b8ab966c056",
+    "picture": "https://i.ibb.co/RSQZpMN/Nephrologist-Care.jpg",
+    "name": "Nephrologist Care",
+    "desc": "Nephrologists are medical professionals who diagnose, treat, and manage acute and chronic kidney problems and diseases. They also treat associated issues like high blood pressure, fluid retention, and electrolyte and mineral imbalances.",
+    "section": "Therapy"
+  },
+  {
+    "_id": "61376904cdd234fa0117b1a4",
+    "picture": "https://i.ibb.co/5GMxMnY/Eye-Care.jpg",
+    "name": "Eye Care",
+    "desc": "Visual perception is the ability to interpret the surrounding environment through color vision, scotopic vision, and mesopic vision, using light in the visible spectrum reflected by the objects in the environment. This is different from visual acuity, which refers to how clearly a person sees. ",
+    "section": "Surgery"
+  },
+  {
+    "_id": "61376904626edf95ca3591e5",
+    "picture": "https://i.ibb.co/0JrCWvQ/Pediatrician-Clinic.jpg",
+    "name": "Pediatrician Clinic",
+    "desc": "A pediatrician is a medical doctor who manages the physical, behavioral, and mental care for children from birth until age 18. A pediatrician is trained to diagnose and treat a broad range of childhood illnesses, from minor health problems to serious diseases.",
+    "section": "Pediatric"
+  },
+  {
+    "_id": "6137690487baccd8b66135bd",
+    "picture": "https://i.ibb.co/hB1Kwyt/Prenatal-Care.jpg",
+    "name": "Prenatal Care",
+    "desc": "Prenatal care is the health care you get while you are pregnant. It includes your checkups and prenatal testing. Prenatal care can help keep you and your baby healthy. It lets your health care provider spot health problems early",
+    "section": "Rehabilitation"
+  },
+  {
+    "_id": "613769048bc7ee484f8c8348",
+    "picture": "https://i.ibb.co/f8Wm7cW/Cardiac-Clinic.jpg",
+    "name": "Cardiac Clinic",
+    "desc": "Mayo Clinic has tailored a unique and effective approach for people who wish to be proactive in maintaining their heart health. The staff in the Cardiovascular Health Clinic at Mayo Clinic's campuses in Florida and Minnesota is focused on the needs of people of all ages at risk of heart disease .",
+    "section": "Therapy"
+  },
+  {
+    "_id": "613769047eddd1f68903d2a2",
+    "picture": "https://i.ibb.co/BfwZSQD/Outpatient-Surgery.jpg",
+    "name": "Outpatient Surgery",
+    "desc": "Outpatient surgery, also known as ambulatory surgery, day surgery, day case surgery, or same-day surgery, is surgery that does not require an overnight hospital stay. The term “outpatient” arises from the fact that surgery patients may enter and leave the facility on the same day.",
+    "section": "Pharmacy"
+  }
+]

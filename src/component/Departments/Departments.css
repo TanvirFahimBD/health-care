@@ -1,0 +1,37 @@
+.department-info {
+  display: flex;
+}
+
+.department-all {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.department-details {
+  width: 300px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.dept {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 20px;
+  width: 300px;
+}
+
+.time {
+  background-color: rgb(51, 127, 226);
+  color: white;
+  padding: 20px;
+  width: 300px;
+}
+
+.contact {
+  background-color: rgb(126, 174, 230);
+
+  color: white;
+  padding: 20px;
+  width: 300px;
+}

@@ -1,0 +1,47 @@
+.carousel img {
+  height: 800px;
+}
+.services-header {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.service-all,
+.clients-all,
+.our-philosophy {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-philosophy img {
+  width: 100%;
+  height: 600px;
+}
+
+.philosophy {
+  background-color: #1565c0;
+  color: white;
+  width: 50%;
+}
+
+.philosophy-info {
+  padding: 30px;
+}
+
+.philosophy-info h1 {
+  margin-bottom: 50px;
+}
+
+.philosophy-info h4 {
+  margin-bottom: 80px;
+}
+
+.philosophy-btn {
+  margin-top: 50px;
+}
+
+.clients-header {
+  text-align: center;
+  margin-top: 40px;
+}

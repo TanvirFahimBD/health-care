@@ -1,0 +1,6 @@
+.event-all {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  cursor: pointer;
+}

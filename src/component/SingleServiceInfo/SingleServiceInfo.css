@@ -1,0 +1,30 @@
+.single-service {
+  width: 30%;
+  border: 2px solid white;
+  box-shadow: 5px 5px 5px lightgray;
+  border-radius: 10px;
+  margin: 3% 1%;
+  height: 600px;
+  overflow: hidden;
+  margin-left: 30px;
+}
+
+.single-service img {
+  text-align: center;
+  height: 60%;
+}
+
+.service-name {
+  margin-top: 10px;
+}
+
+.service-btn {
+  width: 100px;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 425px) {
+  .single-service {
+    height: 800px;
+  }
+}
