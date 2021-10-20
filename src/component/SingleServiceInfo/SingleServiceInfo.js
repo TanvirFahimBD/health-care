@@ -10,7 +10,7 @@ const SingleServiceInfo = ({ id, name, picture, desc }) => {
       <h5 className="service-name">{name}</h5>
       <p>{desc}</p>
       <Link to={`/service/${id}`} className="service-btn">
-        <button className="service-btn">More</button>
+        <button className="service-btn btn-primary">More</button>
       </Link>
     </div>
   );
