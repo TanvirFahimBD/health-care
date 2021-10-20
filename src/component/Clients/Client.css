@@ -1,3 +1,4 @@
+/* single-client area  */
 .single-client {
   width: 30%;
   border: 2px solid white;
@@ -14,6 +15,7 @@
   height: 100px;
 }
 
+/* client-info area  */
 .client-info {
   display: flex;
   height: 100px;

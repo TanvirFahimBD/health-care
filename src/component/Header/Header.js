@@ -27,11 +27,13 @@ const Header = () => {
               <Nav.Link as={Link} to={"/events"}>
                 <h5>EVENTS</h5>
               </Nav.Link>
+              {/* display login button depends on login */}
               {!user.displayName && (
                 <Nav.Link as={Link} to={"/login"}>
                   <h5>LOGIN</h5>
                 </Nav.Link>
               )}
+              {/* display logout button depends on login */}
               {user.displayName && (
                 <span className="mt-2 mx-3">{user.displayName}</span>
               )}

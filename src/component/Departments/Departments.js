@@ -11,6 +11,7 @@ const Departments = () => {
   }, []);
 
   return (
+    // all department
     <div className="department-info">
       <div className="department-all">
         {department.map((dp) => (
@@ -22,6 +23,7 @@ const Departments = () => {
           ></SingleDepartment>
         ))}
       </div>
+      {/* department info */}
       <div className="department-all department-details">
         <div className="dept">
           <h3>Our Departments</h3>
@@ -43,6 +45,7 @@ const Departments = () => {
           <p>Outpatient Rehabilitation</p>
           <hr />
         </div>
+        {/* department time */}
         <div className="time">
           <br />
           <h3>Opening Hours</h3>
@@ -54,6 +57,7 @@ const Departments = () => {
           <p>Sunday:9.30 - 18.30</p>
           <hr />
         </div>
+        {/* department contact  */}
         <div className="contact">
           <br />
           <h3>Contacts</h3>

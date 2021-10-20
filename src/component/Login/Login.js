@@ -24,11 +24,13 @@ const Login = () => {
     handleReEnterPasswordChange,
   } = useFirebase();
 
+  //get history & location from private route
   const history = useHistory();
   const location = useLocation();
   const redirect_uri = location.state?.from || "/";
   console.log("came from", location.state?.from);
 
+  //handle google signin & redirect to the location from it came
   const handleGoogleSignIn = () => {
     signInUsingGoogle().then((result) => {
       console.log("user", result.user);
@@ -41,6 +43,7 @@ const Login = () => {
     <div className="m-5">
       <div className="mx-5 mb-5">
         <h1 className="mb-4">{!isLogin ? "Register" : "Login"}</h1>
+        {/* registration & login form depends on condition  */}
         <form onSubmit={handleRegistration}>
           {!isLogin && (
             <div className="row mb-3">
@@ -123,6 +126,7 @@ const Login = () => {
               </div>
             </div>
           </div>
+          {/* error message  */}
           <div>
             <p className="text-danger">{error}</p>
           </div>
@@ -130,11 +134,13 @@ const Login = () => {
             {!isLogin ? "Sign Up" : "Login"}
           </button>
           <div>
+            {/* success message */}
             <p className="mt-5 text-success">{message}</p>
           </div>
         </form>
       </div>
       <div className="text-center">
+        {/* google sign in with popup */}
         <div>
           <button onClick={handleGoogleSignIn}>
             <FontAwesomeIcon icon={faGoogle} /> SignIn

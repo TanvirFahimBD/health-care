@@ -13,6 +13,7 @@ import {
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Firebase/firebase.init";
 
+//initialize firebase authentication
 initializeAuthentication();
 
 const useFirebase = () => {
@@ -28,10 +29,12 @@ const useFirebase = () => {
   const googleProvider = new GoogleAuthProvider();
   const auth = getAuth();
 
+  //Google signIn with popup
   const signInUsingGoogle = () => {
     return signInWithPopup(auth, googleProvider);
   };
 
+  //logout from account
   const logOut = () => {
     const auth = getAuth();
     signOut(auth).then(() => {
@@ -39,6 +42,7 @@ const useFirebase = () => {
     });
   };
 
+  // check email & password different validation
   const handleRegistration = (e) => {
     e.preventDefault();
     if (!/\S+@\S+\.\S+/.test(email)) {
@@ -61,6 +65,8 @@ const useFirebase = () => {
       setError("Password didn't match");
       return;
     }
+
+    //call register or login depends on login info
     if (!isLogin) {
       registerNewUser(email, password);
     } else {
@@ -68,6 +74,7 @@ const useFirebase = () => {
     }
   };
 
+  //firebase registration
   const registerNewUser = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
@@ -86,6 +93,7 @@ const useFirebase = () => {
       });
   };
 
+  //registration username update
   const setUserName = () => {
     updateProfile(auth.currentUser, {
       displayName: name,
@@ -96,12 +104,14 @@ const useFirebase = () => {
       });
   };
 
+  //verify email during registration
   const emailVerify = () => {
     sendEmailVerification(auth.currentUser).then(() => {
       console.log("email send please check & verify your email");
     });
   };
 
+  //verify password during registration
   const resetPassword = () => {
     sendPasswordResetEmail(auth, email)
       .then(() => {
@@ -112,6 +122,7 @@ const useFirebase = () => {
       });
   };
 
+  //login user
   const processLogin = (email, password) => {
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
@@ -147,6 +158,7 @@ const useFirebase = () => {
     setIsLogin(e.target.checked);
   };
 
+  //observe user state change
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {

@@ -38,6 +38,7 @@ const Home = () => {
           </Carousel.Item>
         </Carousel>
       </div>
+
       {/* services area */}
       <h2 className="services-header">OUR SERVICES</h2>
       <div className="service-all">

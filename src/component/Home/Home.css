@@ -1,6 +1,8 @@
 .carousel img {
   height: 800px;
 }
+
+/* services area  */
 .services-header {
   text-align: center;
   margin-top: 40px;
@@ -19,6 +21,7 @@
   height: 600px;
 }
 
+/* philosophy area  */
 .philosophy {
   background-color: #1565c0;
   color: white;
@@ -40,6 +43,8 @@
 .philosophy-btn {
   margin-top: 50px;
 }
+
+/* clients area  */
 
 .clients-header {
   text-align: center;

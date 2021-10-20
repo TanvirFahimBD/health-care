@@ -18,32 +18,41 @@ function App() {
       <div id="container">
         <div id="main-content">
           <Router>
+            {/* header component */}
             <Header />
             <Switch>
+              {/* default route on home */}
               <Route exact path="/">
                 <Home></Home>
               </Route>
+              {/* home route */}
               <Route path="/home">
                 <Home></Home>
               </Route>
+              {/* private route for single service details */}
               <PrivateRoute path="/service/:serviceId">
                 <ServiceDetails></ServiceDetails>
               </PrivateRoute>
+              {/* department route */}
               <Route path="/departments">
                 <Departments></Departments>
               </Route>
+              {/* event route */}
               <Route path="/events">
                 <Events></Events>
               </Route>
+              {/* login route  */}
               <Route path="/login">
                 <Login></Login>
               </Route>
+              {/* route for not found page  */}
               <Route path="*">
                 <NotFound></NotFound>
               </Route>
             </Switch>
           </Router>
         </div>
+        {/* footer component */}
         <Footer />
       </div>
     </AuthProvider>
