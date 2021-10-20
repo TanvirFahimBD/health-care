@@ -134,31 +134,12 @@ const Login = () => {
           </div>
         </form>
       </div>
-      <div>
-        {email && (
-          <div>
-            <p>Email: {email}</p>
-            <p>Password: {password}</p>
-          </div>
-        )}
-      </div>
       <div className="text-center">
-        {!user.email && (
-          <div>
-            <button onClick={handleGoogleSignIn}>
-              <FontAwesomeIcon icon={faGoogle} /> Google SignIn
-            </button>
-          </div>
-        )}
-        {user.email && <button onClick={logOut}>Logout</button>}
-        {user.email && (
-          <div>
-            <h4>Email: {user.email}</h4>
-            <h5>Name:{user.displayName}</h5>
-            <span>Image:</span>
-            <img src={user.photoURL} alt="" />
-          </div>
-        )}
+        <div>
+          <button onClick={handleGoogleSignIn}>
+            <FontAwesomeIcon icon={faGoogle} /> SignIn
+          </button>
+        </div>
       </div>
     </div>
   );
