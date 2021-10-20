@@ -1,3 +1,3 @@
-#Site Name: HEALTH CARE
+#Site Name: Med. Health
 
-#Live Site: https://health-care-covid.netlify.app/
+#Live Site: https://med-health-e3f2a.web.app/
