@@ -1,4 +1,4 @@
-### Live Netlify Link: https://med-health-e3f2a.web.app/
+### Live Site: https://med-health-e3f2a.web.app/
 
 ---
 
